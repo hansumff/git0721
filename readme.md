@@ -52,7 +52,16 @@
     托管平台
     使用步骤:
         1. 创建仓库
-        2. 建立远程链接 git remote add origin https://xxx.get
+        2. 建立远程链接 git remote add origin https://xxx.git
         3. 将本地文件提交到版本库
         4. 推送到远程仓库 git push -u origin master
+    空项目克隆:
+        1. git clone https://xxx.git
+        2. 假如github新增了一个分支
+        3. 本地执行git pull 会把所有分支拉回本地
+        4. 此时有个问题，执行git branch查看不到新增分支
+        5. 但是可以切换到该分支 git checkout xxx
+    本地推送:
+        1. 新修改后，把文件放到版本库，此时注意你在哪个分支下
+        2. 执行git push origin xxx 
     ```
